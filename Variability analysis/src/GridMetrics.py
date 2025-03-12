@@ -12,11 +12,11 @@ import scipy.ndimage as ndimage
 from skimage import filters
 from skimage.feature import peak_local_max
 from scipy.stats import circmean
-from src.DataLoader import DataExtractor, moser_data_extractor
 from matplotlib.lines import Line2D
 import random
 import pickle
 import json
+
 
 
 def create_new_result_dir(results_working_directory, new_result_dir_name):
