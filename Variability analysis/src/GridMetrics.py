@@ -18,7 +18,6 @@ import pickle
 import json
 
 
-
 def create_new_result_dir(results_working_directory, new_result_dir_name):
     """
     Creates a new directory for results if it does not already exist

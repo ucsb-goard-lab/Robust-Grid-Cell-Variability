@@ -7,13 +7,12 @@ current_dir = os.getcwd()
 src_path = os.path.join(os.path.dirname(current_dir), 'src')
 if src_path not in sys.path:
     sys.path.append(src_path)
-    
+
 from GridMetrics import GridScorer, circle_mask, get_even_odd_times, GridParameters, create_new_result_dir, load_grid_metrics_from_pickle
 import json
 
 rats = ['q', 'q', 'r1', 'r1', 'r1', 's', 'r2', 'r2', 'r2']
 mods = ['1', '2', '1', '2', '3', '1', '1', '2', '3']
-
 
 for rat, mod in zip(rats, mods):
     print('Computing metrics for rat ' + rat + ' mod ' + mod)
